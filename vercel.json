@@ -1,3 +1,8 @@
 {
-    "public": "public"
+    "rewrites": [
+        {"source": "/", "destination": "/index.html"},
+        {"source": "/courses", "destination": "/courses.html"},
+        {"source": "/courses.html", "destination": "/courses.html"},
+        {"source": "/:match*", "destination": "/:match*"}
+    ]
 }
