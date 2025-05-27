@@ -159,7 +159,7 @@ function createCourseCard(course) {
     `
 }
 
-// Fetch courses from API
+// fetch courses from API
 async function loadCourses() {
     showSkeletonLoader()
 
@@ -212,7 +212,7 @@ function renderCourses(category = "all") {
     }
 }
 
-// Show More button
+// show More button
 function showMoreCourses() {
     visibleCourses += 5
     renderCourses(currentCategory)
