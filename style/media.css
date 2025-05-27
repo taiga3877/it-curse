@@ -239,3 +239,15 @@
         align-items: center;
     }
 }
+
+@media (max-width: 880px) {
+    .blog-grid-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-grid-box {
+        grid-template-columns: 1fr;
+    }
+}
