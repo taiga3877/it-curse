@@ -267,7 +267,7 @@ html {
 /* Mobile Navigation */
 .nav-mobile {
     display: none;
-    background: var(--var(--white));
+    background: var(--white);
     padding: 16px;
     border-top: 1px solid #e5e7eb;
 }
@@ -524,6 +524,7 @@ html {
     align-self: center;
     padding: 15px 25px;
     border: 1px solid #ccc;
+    color: var(--text-color) !important;
     border-radius: 50px;
     outline: none;
     cursor: pointer;
