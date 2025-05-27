@@ -643,6 +643,7 @@ html {
     overflow-y: scroll;
     justify-content: start;
     font-family: var(--font-family);
+    padding-bottom: 10px;
 }
 
 .course-category-tab {
