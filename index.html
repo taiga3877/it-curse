@@ -12,6 +12,8 @@
     <!-- style -->
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/media.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- icon -->
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
@@ -23,6 +25,7 @@
 
 <body>
 
+    <!-- header start -->
     <header class="header">
         <div class="container">
             <div class="header-content">
@@ -42,22 +45,26 @@
 
                 <!-- Right Side Elements -->
                 <div class="header-right">
-                    <!-- Search -->
-                    <div class="search-container">
-                        <form class="search-form">
-                            <input type="text" class="search-input" placeholder="Искать курсы">
-                            <button type="submit" class="search-button">
-                                <span class="search-icon"></span>
-                            </button>
-                        </form>
-                    </div>
 
                     <!-- Notifications -->
                     <div class="notifications">
                         <button class="notification-button">
-                            <span class="notification-icon"></span>
+                            <svg width="28" height="22" viewBox="0 0 28 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M27.7071 7.29286L20.7069 0.29273C20.3163 -0.0977454 19.6832 -0.0976281 19.2927 0.292964C19.1052 0.480467 18.9999 0.734651 18.9999 0.999792V3.99984H11.9997C11.4474 3.99984 10.9997 4.44756 10.9997 4.99988C10.9997 5.55219 11.4474 5.99991 11.9997 5.99991H19.9999C20.5522 5.99991 21 5.55219 21 4.99988V3.41378L25.586 7.99986L21 12.586V10.9999C21 10.4476 20.5522 9.99988 19.9999 9.99988H8.99969V6.99983C8.99957 6.44752 8.55173 5.99991 7.99948 6.00003C7.73439 6.00009 7.48015 6.10538 7.29265 6.29283L0.292568 13.293C-0.0978483 13.6835 -0.0978483 14.3165 0.292568 14.707L7.29271 21.7071C7.48021 21.8947 7.73451 22.0001 7.99971 22.0001C8.13114 22.0005 8.26139 21.9747 8.38269 21.9241C8.75629 21.7692 8.99981 21.4046 8.99969 21.0001V18H15.9998C16.5521 18 16.9999 17.5523 16.9999 17C16.9999 16.4477 16.5521 16 15.9998 16H7.99971C7.4474 16 6.99967 16.4477 6.99967 17V18.5861L2.41358 14L6.99967 9.41387V10.9999C6.99967 11.5522 7.4474 11.9999 7.99971 11.9999H18.9999V15C19 15.5523 19.4478 15.9999 20.0001 15.9998C20.2652 15.9997 20.5194 15.8944 20.7069 15.707L27.7071 8.70687C28.0974 8.31633 28.0974 7.68334 27.7071 7.29286Z"
+                                    fill="#2B2B2B" />
+                            </svg>
                             <span class="notification-badge">2</span>
                         </button>
+                    </div>
+
+                    <!-- Search -->
+                    <div class="search-container">
+                        <form class="search-form">
+                            <i class='bx  bx-search-big'></i>
+                            <input type="search" class="search-input" placeholder="Искать курсы">
+                        </form>
                     </div>
 
                     <!-- Mobile Menu Button -->
@@ -72,10 +79,8 @@
         <nav class="nav-mobile">
             <div class="mobile-search">
                 <form class="search-form">
-                    <input type="text" class="search-input" placeholder="Искать курсы">
-                    <button type="submit" class="search-button">
-                        <span class="search-icon"></span>
-                    </button>
+                    <i class='bx  bx-search-big'></i>
+                    <input type="search" class="search-input" placeholder="Искать курсы">
                 </form>
             </div>
             <a href="./courses.html" class="nav-link">Курсы</a>
@@ -85,10 +90,322 @@
             <a href="#!" class="nav-link">Блог</a>
         </nav>
     </header>
+    <!-- header end -->
+
+    <!-- showcase start -->
+    <section class="showcase">
+        <div class="container">
+            <div class="showcase-content">
+                <h1>Агрегатор онлайн-курсов</h1>
+
+                <p>
+                    Сравниваем онлайн-курсы по digital и IT.
+                    Мы — каталог-отзовик курсов. Выбирайте курсы по отзывам,
+                    цене, продолжительности и другим критериям!
+                </p>
+            </div>
+        </div>
+
+        <div class="showcase-img">
+            <img src="./assets/img/showcase.png" alt="showcase" loading="eager">
+        </div>
+    </section>
+    <!-- showcase end -->
+
+    <!-- advantages start-->
+    <section class="advantages">
+        <div class="container">
+            <h1 class="section-title">Наши преимущества</h1>
+
+            <div class="advantages-grid-box">
+                <!-- advantages 1 -->
+                <div class="advantages-grid-box-item">
+                    <div class="advantages-grid-box-item-top">
+                        <img src="./assets/svg/video.svg" alt="video">
+
+                        <h3>Большой выбор <br> онлайн-курсов</h3>
+                    </div>
+
+                    <p>
+                        Мы аккумулируем большое количество
+                        онлайн-курсов по различным направлениям,
+                        позволяя сравнивать их, и выбирать то,
+                        что вам нравится
+                    </p>
+                </div>
+
+                <!-- advantages 2 -->
+                <div class="advantages-grid-box-item">
+                    <div class="advantages-grid-box-item-top">
+                        <img src="./assets/svg/search.svg" alt="video">
+
+                        <h3>Актуальная <br> информация</h3>
+                    </div>
+
+                    <p>
+                        Мы регулярно обновляем наши базы данных, чтобы предоставлять вам только самую свежую информацию
+                        о новых курсах, старте обучения</p>
+                </div>
+
+                <!-- advantages 3 -->
+                <div class="advantages-grid-box-item">
+                    <div class="advantages-grid-box-item-top">
+                        <img src="./assets/svg/setting.svg" alt="video">
+
+                        <h3>Скорость <br> поиска</h3>
+                    </div>
+
+                    <p>
+                        Агрегатор курсов создан для экономии вашего времени. Вы можете с легкостью найти подходящий курс
+                        в нашем каталоге
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- advantages end-->
+
+    <!-- course catalog start -->
+    <section class="course-catalog">
+        <div class="container">
+            <h1 class="section-title">Направления курсов</h1>
+
+            <div class="catalog">
+                <!-- mobile select -->
+                <select id="mobile-categories-select" class="mobile-categories">
+                    <option value="programming" selected>Программирование</option>
+                    <option value="marketing">Маркетинг</option>
+                    <option value="design">Дизайн</option>
+                    <option value="analytics">Аналитика</option>
+                    <option value="finance">Финансы</option>
+                    <option value="management">Управление</option>
+                    <option value="content">Контент-маркетинг</option>
+                </select>
+
+                <div class="categories">
+                    <div class="category-tab active" data-category="programming">Программирование</div>
+                    <div class="category-tab" data-category="marketing">Маркетинг</div>
+                    <div class="category-tab" data-category="design">Дизайн</div>
+                    <div class="category-tab" data-category="analytics">Аналитика</div>
+                    <div class="category-tab" data-category="finance">Финансы</div>
+                    <div class="category-tab" data-category="management">Управление</div>
+                    <div class="category-tab" data-category="content">Контент-маркетинг</div>
+                </div>
+
+                <div class="courses active" id="programming">
+                    <div class="course-column">
+                        <a href="#!">Все курсы <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Python-разработка <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Web-разработка <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Мобильная разработка <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">JavaScript-разработка <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Java-разработка <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Разработка игр <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Создание сайтов <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Системное админ <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">QA-тестирование <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                    <div class="course-column">
+                        <a href="#!">Android-разработка <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Управление разработкой <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Frontend-разработка <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Разработка игр на Unity <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Разработка на C# <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">PHP-разработка <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">DevOps <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">IOS-разработка <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Верстка на HTML/CSS <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Разработка на C++ <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                    <div class="course-column">
+                        <a href="#!">Разработка игр <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Разработка на Kotlin <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">IT безопасность <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Golang-разработка <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Разработка на Swift <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">1С-разработка <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">VR/AR разработка <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Фреймворк Laravel <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="courses" id="marketing">
+                    <div class="course-column">
+                        <a href="#!">Digital-маркетинг <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">SEO <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">SMM <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Контекстная реклама <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Email-маркетинг <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Performance-маркетинг <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                    <div class="course-column">
+                        <a href="#!">Product-маркетинг <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Контент-стратегия <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Influence Marketing <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Маркетинг-аналитика <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Брендинг <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="courses" id="design">
+                    <div class="course-column">
+                        <a href="#!">UX/UI Дизайн <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Графический дизайн <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Motion-дизайн <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Figma <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Adobe Illustrator <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                    <div class="course-column">
+                        <a href="#!">Adobe Photoshop <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">3D-дизайн <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Веб-дизайн <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Дизайн мобильных приложений <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Бренд-дизайн <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="courses" id="analytics">
+                    <div class="course-column">
+                        <a href="#!">Анализ данных <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Power BI <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Tableau <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">SQL для аналитиков <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Python для анализа данных <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                    <div class="course-column">
+                        <a href="#!">Excel <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Продуктовая аналитика <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">BI-системы <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Google Analytics <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">А/Б тестирование <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="courses" id="finance">
+                    <div class="course-column">
+                        <a href="#!">Финансовый учет <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Бюджетирование <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Инвестиционный анализ <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Финансовый менеджмент <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">МСФО <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                    <div class="course-column">
+                        <a href="#!">Финансовая отчетность <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Финансовый анализ <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Бухгалтерия <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Excel для финансов <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Корпоративные финансы <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="courses" id="management">
+                    <div class="course-column">
+                        <a href="#!">Проектный менеджмент <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Product Management <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Agile/Scrum <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">HR-менеджмент <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Управление командой <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                    <div class="course-column">
+                        <a href="#!">Лидерство <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Кризисное управление <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Стратегическое планирование <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Бизнес-анализ <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Мотивация персонала <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="courses" id="content">
+                    <div class="course-column">
+                        <a href="#!">Копирайтинг <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">SEO-копирайтинг <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">UX-копирайтинг <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Работа с текстами <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Редактирование контента <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                    <div class="course-column">
+                        <a href="#!">Сторителлинг <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Контент для соцсетей <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Видео-контент <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Планирование публикаций <i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#!">Контент-менеджмент <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- course catalog end -->
+
+    <!-- schools start -->
+    <section class="schools">
+        <div class="container">
+            <h1 class="section-title">Школы</h1>
+
+            <div class="swiper schools-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide school-brand">
+                        <img src="./assets/img/schools/netology.png" alt="netology">
+                    </div>
+                    <div class="swiper-slide school-brand">
+                        <img src="./assets/img/schools/skillfactory.png" alt="skillfactory">
+                    </div>
+                    <div class="swiper-slide school-brand">
+                        <img src="./assets/img/schools/otus.png" alt="otus">
+                    </div>
+                    <div class="swiper-slide school-brand">
+                        <img src="./assets/img/schools/geekbrains.png" alt="geekbrains">
+                    </div>
+                    <div class="swiper-slide school-brand">
+                        <img src="./assets/img/schools/skillfactory.png" alt="skillfactory">
+                    </div>
+                </div>
+
+                <!-- Pagination and Navigation -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+    <!-- schools end -->
+
+    <!-- course cards -->
+    <section class="course-cards">
+        <div class="container">
+            <h1 class="section-title">Популярные онлайн-курсы</h1>
+
+            <div class="courses-box">
+                <div class="course-categories">
+                    <div class="course-category-tab course-active" data-category="all">Все курсы</div>
+                    <div class="course-category-tab" data-category="Программирование">Программирование</div>
+                    <div class="course-category-tab" data-category="Маркетинг">Маркетинг</div>
+                    <div class="course-category-tab" data-category="Дизайн">Дизайн</div>
+                    <div class="course-category-tab" data-category="Аналитика">Аналитика</div>
+                    <div class="course-category-tab" data-category="Финансы">Финансы</div>
+                    <div class="course-category-tab" data-category="Управление">Управление</div>
+                    <div class="course-category-tab" data-category="Контент-маркетинг">Контент-маркетинг</div>
+                    <div class="course-category-tab" data-category="Иностранные языки">Иностранные языки</div>
+                </div>
+
+                <div class="courses-append-box" id="coursesContainer">
+                    <!-- cards -->
+                </div>
+
+                <div class="show-more-btn">
+                    <button class="btn btn-solid">
+                        Посмотреть еще
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- course cards end -->
 
 
-    <section></section>
-
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- local js -->
     <script src="./js/main.js"></script>
     <script src="./js/swiper.js"></script>
 </body>

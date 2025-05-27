@@ -1,0 +1,235 @@
+/* Responsive Design */
+/* header */
+@media (max-width: 768px) {
+    .section-title {
+        font-weight: 800;
+        font-size: 24px;
+    }
+    .nav-desktop {
+        display: none;
+    }
+
+    .search-container {
+        display: none;
+    }
+
+    .notification-button {
+        border: none;
+    }
+
+    .search-form {
+        height: auto;
+        padding: 5px 15px;
+        border-bottom: 1px solid var(--text-color);
+    }
+
+    .search-input {
+        border: none !important;
+        height: auto;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .nav-mobile.active {
+        display: block;
+        position: absolute;
+        width: 100%;
+        z-index: 100;
+        background: var(--white);
+    }
+}
+
+@media (min-width: 769px) {
+    .nav-mobile {
+        display: none !important;
+    }
+}
+
+/* showcase */
+@media (max-width: 1000px) {
+    .showcase {
+        height: auto;
+    }
+
+    .showcase > .container {
+        height: auto;
+    }
+
+    .showcase-content p {
+        width: 100%;
+    }
+
+    .showcase-img {
+        position: static;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .showcase-img img {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        animation: float-rotate 4s ease-in-out infinite alternate;
+    }
+}
+
+@media (max-width: 520px) {
+    .showcase-content h1 {
+        font-size: 20px;
+    }
+
+    .showcase-content p {
+        font-size: 15px;
+    }
+}
+
+/* advantages */
+
+@media (max-width: 875px) {
+    .advantages-grid-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .advantages-grid-box {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .advantages-grid-box-item {
+        gap: 10px;
+    }
+
+    .advantages-grid-box-item-top h3 {
+        font-size: 15px;
+    }
+
+    .advantages-grid-box-item-top br {
+        display: none;
+    }
+}
+
+/* course catalog */
+@media (max-width: 992px) {
+    .catalog {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .categories {
+        width: 100%;
+        flex-direction: row;
+        gap: 20px;
+        overflow: scroll;
+    }
+
+    .categories::-webkit-scrollbar {
+        height: 0;
+    }
+
+    .category-tab {
+        text-wrap-mode: nowrap;
+        border-radius: 50px;
+        font-weight: normal;
+        width: auto;
+    }
+
+    .category-tab.active {
+        color: var(--white);
+        background: var(--light-green);
+    }
+
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .categories {
+        display: none !important;
+    }
+
+    .mobile-categories {
+        display: block;
+    }
+
+    .courses {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .course-column a {
+        width: 100%;
+    }
+}
+
+/* course cards */
+@media (max-width: 1000px) {
+    .course-card-item {
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+    }
+
+    .card-item-title {
+        width: 100%;
+    }
+
+    .card-mobile {
+        gap: 40px;
+    }
+
+    .card-item-action {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-mobile-column {
+        width: 70%;
+    }
+
+    .card-item-date {
+        justify-content: start;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-mobile-column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 630px) {
+    .card-mobile-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 20px;
+    }
+
+    .card-mobile {
+        width: 100%;
+    }
+
+    .card-item-title h1 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 390px) {
+    .card-item-action {
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 10px;
+    }
+    .card-item-action p {
+        justify-content: center;
+        align-items: center;
+    }
+}
