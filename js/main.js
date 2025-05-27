@@ -1,3 +1,17 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const loader = document.querySelector(".loader-box")
+    const html = document.documentElement
+    const body = document.body
+
+    const originalOverflow = html.style.overflow || ""
+    html.style.overflow = "hidden"
+
+    setTimeout(() => {
+        loader.style.display = "none"
+        html.style.overflow = originalOverflow
+    }, 2000)
+})
+
 // menu icon
 document.querySelector(".menu-button").addEventListener("click", function () {
     document.querySelector(".nav-mobile").classList.toggle("active")
@@ -79,7 +93,7 @@ function showSkeletonLoader() {
 // create course card HTML
 function createCourseCard(course) {
     return `
-        <div class="course-card-item" data-category="${course?.category.toLowerCase()}">
+        <div class="course-card-item" data-aos="fade-up" data-category="${course?.category.toLowerCase()}">
             <div class="card-item-title">
                 <h1>${course?.title}</h1>
             </div>

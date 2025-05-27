@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./style/media.css">
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- icon -->
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
@@ -24,6 +26,12 @@
 </head>
 
 <body>
+
+    <!-- loader -->
+    <div class="loader-box">
+        <img src="./assets/img/loader.gif" alt="" loading="eager">
+    </div>
+    <!-- loader end -->
 
     <!-- header start -->
     <header class="header">
@@ -95,7 +103,7 @@
     <!-- showcase start -->
     <section class="showcase">
         <div class="container">
-            <div class="showcase-content">
+            <div class="showcase-content" data-aos="fade-right">
                 <h1>Агрегатор онлайн-курсов</h1>
 
                 <p>
@@ -106,7 +114,7 @@
             </div>
         </div>
 
-        <div class="showcase-img">
+        <div class="showcase-img" data-aos="fade-left">
             <img src="./assets/img/showcase.png" alt="showcase" loading="eager">
         </div>
     </section>
@@ -115,11 +123,11 @@
     <!-- advantages start-->
     <section class="advantages">
         <div class="container">
-            <h1 class="section-title">Наши преимущества</h1>
+            <h1 class="section-title" data-aos="zoom-in">Наши преимущества</h1>
 
             <div class="advantages-grid-box">
                 <!-- advantages 1 -->
-                <div class="advantages-grid-box-item">
+                <div class="advantages-grid-box-item" data-aos="flip-up">
                     <div class="advantages-grid-box-item-top">
                         <img src="./assets/svg/video.svg" alt="video">
 
@@ -135,7 +143,7 @@
                 </div>
 
                 <!-- advantages 2 -->
-                <div class="advantages-grid-box-item">
+                <div class="advantages-grid-box-item" data-aos="flip-up">
                     <div class="advantages-grid-box-item-top">
                         <img src="./assets/svg/search.svg" alt="video">
 
@@ -148,7 +156,7 @@
                 </div>
 
                 <!-- advantages 3 -->
-                <div class="advantages-grid-box-item">
+                <div class="advantages-grid-box-item" data-aos="flip-up">
                     <div class="advantages-grid-box-item-top">
                         <img src="./assets/svg/setting.svg" alt="video">
 
@@ -168,7 +176,7 @@
     <!-- course catalog start -->
     <section class="course-catalog">
         <div class="container">
-            <h1 class="section-title">Направления курсов</h1>
+            <h1 class="section-title" data-aos="zoom-in">Направления курсов</h1>
 
             <div class="catalog">
                 <!-- mobile select -->
@@ -340,7 +348,7 @@
     <!-- schools start -->
     <section class="schools">
         <div class="container">
-            <h1 class="section-title">Школы</h1>
+            <h1 class="section-title" data-aos="zoom-in">Школы</h1>
 
             <div class="swiper schools-swiper">
                 <div class="swiper-wrapper">
@@ -373,7 +381,7 @@
     <!-- course cards -->
     <section class="course-cards">
         <div class="container">
-            <h1 class="section-title">Популярные онлайн-курсы</h1>
+            <h1 class="section-title" data-aos="zoom-in">Популярные онлайн-курсы</h1>
 
             <div class="courses-box">
                 <div class="course-categories">
@@ -405,12 +413,12 @@
     <!-- blog start -->
     <section class="blog">
         <div class="container">
-            <h1 class="section-title">Блог</h1>
+            <h1 class="section-title" data-aos="zoom-in">Блог</h1>
 
             <div class="blog-grid-box">
 
                 <!-- blog 1 -->
-                <div class="blog-item">
+                <div class="blog-item" data-aos="zoom-in">
                     <div class="blog-item-img">
                         <img src="https://academylms.net/wp-content/uploads/2022/09/Structure-of-Online-Courses.png"
                             alt="online-courses">
@@ -434,7 +442,7 @@
                 </div>
 
                 <!-- blog 2 -->
-                <div class="blog-item">
+                <div class="blog-item" data-aos="zoom-in">
                     <div class="blog-item-img">
                         <img src="https://www.elegantthemes.com/blog/wp-content/uploads/2019/11/successful-online-courses-featured-image.jpg"
                             alt="online-courses">
@@ -458,7 +466,7 @@
                 </div>
 
                 <!-- blog 3 -->
-                <div class="blog-item">
+                <div class="blog-item" data-aos="zoom-in">
                     <div class="blog-item-img">
                         <img src="https://contentstatic.techgig.com/photo/83096291/harvard-university-offers-5-free-online-courses-for-computer-programmers.jpg?95373"
                             alt="online-courses">
@@ -567,6 +575,11 @@
     </footer>
     <!-- footer end -->
 
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- local js -->

@@ -20,8 +20,10 @@
     box-sizing: border-box;
 }
 
-html {
+html,
+body {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -64,6 +66,28 @@ html {
     color: var(--white);
     border-color: var(--light-green);
     background: var(--light-green) !important;
+}
+
+.loader-box {
+    height: 100vh;
+    width: 100vw;
+    z-index: 999999 !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-box img {
+    flex: 1;
+    overflow: auto;
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    user-select: none;
 }
 
 /* Container */
@@ -1034,7 +1058,6 @@ html {
     font-size: 1rem;
 }
 
-
 /* --------------------------------------- course page styles --------------------------------------- */
 
 /* course top */
@@ -1266,7 +1289,6 @@ html {
 .main-filter::-webkit-scrollbar {
     width: 0 !important;
 }
-
 
 .filter-button {
     display: none;
